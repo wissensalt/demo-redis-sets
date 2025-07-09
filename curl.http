@@ -1,0 +1,34 @@
+GET http://localhost:8080/list
+Accept: application/json
+
+###
+
+GET http://localhost:8080/size
+Accept: application/json
+
+###
+
+GET http://localhost:8080/exists?accountId=999
+Accept: application/json
+
+###
+POST http://localhost:8080/upsert
+Content-Type: application/json
+
+[
+  "123",
+  "456",
+  "789"
+]
+
+###
+
+DELETE http://localhost:8080/delete
+Content-Type: application/json
+
+[
+  "456"
+]
+
+###
+
